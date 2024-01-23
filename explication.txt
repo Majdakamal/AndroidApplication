@@ -1,0 +1,34 @@
+Manifest.xml
+
+un fichier de configuration obligatoire pour toute application Android. 
+Ce fichier décrit les composants de l'application et définit diverses propriétés liées
+à son fonctionnement et à son interaction avec le système Android.
+
+CustomAdapter
+un adaptateur personnalisé (CustomAdapter) qui est utilisé pour lier des données à 
+une RecyclerView dans le contexte d'une application Android. Cet adaptateur prend en
+ charge une liste de noms, adresses e-mail et numéros de téléphone, et affiche ces 
+informations dans une liste avec des vues personnalisées
+
+MainActivity
+cette activité charge des données depuis un fichier JSON local, 
+les stocke dans des listes, puis utilise une RecyclerView avec un adaptateur
+ personnalisé (CustomAdapter) pour afficher
+ ces données de manière structurée dans l'interface utilisateur.
+
+
+
+activity_main.xml
+ ce fichier XML déclare un RelativeLayout en tant que conteneur
+ principal et inclut une RecyclerView à l'intérieur de ce conteneur. 
+Cela fournit la structure de
+base pour l'interface utilisateur de l'activité principale 
+
+rowlayout->card
+ce fichier XML définit la mise en page d'un élément individuel
+pour une RecyclerView dans une application Android. Chaque élément est 
+présenté sous la forme d'une carte avec des coins arrondis, et les données (nom, e-mail, numéro de téléphone) 
+sont affichées à l'intérieur de ce conteneur
+
+GJSON->pour parser json file
+api->de top 10 livre,weather 
